@@ -1,133 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-
-    }
-    .parallaxone {
-      width: 100%;
-      height: 500px;
-      background-image: url(pic1.jpg);
-      background-attachment: fixed;
-      background-size: 100% 100%;
-    }
-       .parallaxone h2{
-         position: relative;
-         left: 650px;
-         top: 400px;
-         width: 300px;
-         height: 35px;
-         padding: 5px;
-         background-color:skyblue;
-         text-align: center;
-         color:black;
-         
-       }
-       .parallaxthree h2{
-         position: relative;
-         left: 650px;
-         top: 400px;
-         width: 300px;
-         height: 35px;
-         padding: 5px;
-         background-color:skyblue;
-         text-align: center;
-         color:black;
-          }
-       .parallaxtwo h2{
-         position: relative;
-         left: 650px;
-         top: 400px;
-         width: 300px;
-         height: 35px;
-         padding: 5px;
-         background-color:skyblue;
-         text-align: center;
-         color:black;
-          }
-
-       .parallaxtwo {
-      width: 100%;
-      height: 500px;
-      background-image: url(nevy.jpg);
-      background-attachment: fixed;
-      background-size: 100% 100%;
-       }
-       .parallaxthree {
-      width: 100%;
-      height: 500px;
-      background-image: url(army.webp);
-      background-attachment: fixed;
-      background-size: 100% 100%;
-       }
-       .para{
-         background-color: skyblue;
-         text-align: center;
-         font-family: Arial, Helvetica, sans-serif;
-         font-size: medium;
-         height: 150px;
-         position: relative;
-       }
-       .para p{
-         position: relative;
-         top: 35px;
-       }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="parallaxone">
-    <h2>INDIAN AIR-FORCE</h2>
-  </div>
-  <div class="para">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima eveniet non at vel, beatae temporibus tenetur
-      sapiente. Quae, suscipit ipsa. Molestias harum laboriosam quod, quibusdam numquam, voluptatum commodi
-      necessitatibus eos voluptate eaque laborum. Quidem, quisquam fugiat. Similique dolores illo modi vel consequuntur.
-      Ratione quod impedit incidunt aspernatur id soluta molestiae?Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Laborum ab doloremque dolores optio odit reiciendis tempore nisi enim recusandae at hic, quae adipisci
-      itaque dolorum natus eius atque nam possimus, officia voluptates aut deleniti ratione id perspiciatis. Laudantium
-      tenetur corrupti inventore, fugiat fugit error dolores maiores, facere sequi, eligendi magnam!</p>
+    <div class="container">
+        <div class="main">
+            <h2>Math Addition <span>Quite Game :)</span></h2>
+            <div class="main-box">
+                <div class="show-answer"><span id="ans"></span></div>
+                <div class="box1">
+                    <div class="box-col">
+                        <input type="text" id="intext" class="intext11">
+                    </div>
 
-  </div>
-  <div class="parallaxtwo">
-    <h2>INDIAN NEVY</h2>
-  </div>
-  <div class="para">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima eveniet non at vel, beatae temporibus tenetur
-      sapiente. Quae, suscipit ipsa. Molestias harum laboriosam quod, quibusdam numquam, voluptatum commodi
-      necessitatibus eos voluptate eaque laborum. Quidem, quisquam fugiat. Similique dolores illo modi vel consequuntur.
-      Ratione quod impedit incidunt aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-      exercitationem perferendis aut, quasi necessitatibus ducimus ullam dolorem voluptatem quam repellendus, explicabo
-      tenetur suscipit. Sequi asperiores sint amet pariatur eos cum expedita voluptates eius rem architecto reiciendis
-      dolores placeat unde recusandae, eligendi quae vero ex dignissimos mollitia. Vero iure debitis iste? id soluta
-      molestiae?</p>
+                    <div class="add">
+                        <p>+</p>
+                    </div>
+<!-- shubham git practice -->
 
-  </div>
+                    <div class="box-col">
+                        <input type="text" id="intext1" class="intext11">
+                    </div>
+                </div>
 
-  <div class="parallaxthree">
-    <h2>INDIAN ARMY</h2>
-  </div>
-  <div class="para">
-    <p>Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sapiente magni vero voluptate similique harum fuga saepe blanditiis earum eligendi at asperiores laboriosam velit, quod quisquam! Impedit delectus hic eius quo fugiat praesentium consequatur ratione perspiciatis rerum repellendus harum culpa dignissimos nihil amet natus, optio quibusdam. Ad quis consectetur blanditiis?adipisicing elit. Minima eveniet non at vel, beatae temporibus tenetur
-      sapiente. Quae, suscipit ipsa. Molestias harum laboriosam quod, quibusdam numquam, voluptatum commodi
-      necessitatibus eos voluptate eaque laborum. Quidem, quisquam fugiat. Similique dolores illo modi vel consequuntur.
-      Ratione quod impedit incidunt aspernatur id soluta molestiae?</p>
+                <div class="box2">
+                    <input type="text" id="intext2">
+                </div>
 
-  </div>
-
-
-
-
-
-
-
-
-
-
+                <button id='btn' onclick="game()">Check Answer</button>
+            </div>
+            <script src="main.js"></script>
 </body>
 
-</html
+</html>
